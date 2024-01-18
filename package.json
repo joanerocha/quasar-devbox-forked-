@@ -1,6 +1,6 @@
 {
   "name": "quasar",
-  "version": "0.0.1",
+  "version": "^0.0.1",
   "description": "A Quasar Framework app",
   "productName": "Quasar App",
   "author": "add.your.email@here.com",
@@ -8,18 +8,23 @@
   "scripts": {
     "start": "quasar dev",
     "post-update": "yarn upgrade",
-    "test": "echo \"No test specified\" && exit 0"
+    "icons": "icongenie generate -i grau.png --skip-trim"
   },
   "dependencies": {
     "@quasar/extras": "^1.11.4",
+    "@quasar/icongenie": "3.1.1",
     "core-js": "^3.19.1",
     "quasar": "^2.2.2",
+    "sass": "^1.70.0",
+    "sass-loader": "12.0.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@quasar/app": "^3.1.0"
+    "@quasar/app": "^3.1.0",
+    "electron": "^28.1.4",
+    "electron-packager": "^15.2.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
